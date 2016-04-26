@@ -28,7 +28,10 @@ public class DriverSnake {
 
     do {
       if (input == 'b') {
+        System.out.println("1 petak dunia : 3x3");
+        System.out.print("Masukkan ukuran dunia : ");
         size = s.nextInt();
+        System.out.println("Ukuran dunia " + 3*size + "x" + 3*size);
         view = new char[3 * size][3 * size];
         S = new Snake(size);
         do {
@@ -73,6 +76,10 @@ public class DriverSnake {
           }
           System.out.println();
 
+          System.out.println("w-a-s-d : change direction");
+          System.out.println("n       : next position");
+          System.out.println("e       : eat");
+          System.out.println("q       : quit");
           input = s.next().charAt(0);
           if (input == 'n') {
             S.move();
@@ -89,6 +96,8 @@ public class DriverSnake {
           }
         } while (input != 'q');
       }
+      System.out.println("q : quit");
+      System.out.println("b : begin");
       input = s.next().charAt(0);
     } while (input != 'q');
   }
