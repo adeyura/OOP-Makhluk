@@ -33,6 +33,15 @@ public class Point implements Comparable<Point> {
     x = nx;
     y = ny;
   }
+  
+  /**
+  * ctor kelas Point, absis dan ordinat diisi dengan input pengguna.
+  * @param p
+  */
+  Point(Point p) {
+    x = p.getX();
+    y = p.getY();
+  }
 
   /**
   * Getter absis dari kelas Point.
