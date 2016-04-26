@@ -24,6 +24,21 @@ public class World {
   private final Board m;
 
   /**
+  * Atribut snake player.
+  */
+  private final Snake s;
+  
+  /**
+  * Atribut score player.
+  */
+  private int score;
+  
+  /**
+  * Atribut score player.
+  */
+  private boolean isGameOver;
+  
+  /**
   * ctor kelas World, menciptakan board dengan ukuran tertentu.
   * @author Yusak Yuwono Awondatu / 13514005
   * @param size
@@ -31,6 +46,9 @@ public class World {
   public World(final int size) {
     m = new Board(size);
     listM = new ListMakhluk();
+    s = new Snake(size);
+    score = 0;
+    isGameOver = false;
   }
 
   /**
@@ -87,13 +105,59 @@ public class World {
     * @author Yusak Yuwono Awondatu / 13514005
     */
   public final void update() {
-    listM.makan();
-    m.reset();
-    for (int i = 0; i < listM.size(); i++) {
-      m.setElmt(listM.getList().get(i).getPosisi(),
-              listM.getList().get(i).getChar());
+    if (!isGameOver) {
+      for (int i = 0; i < getNbMakhluk(); i++) {
+        getList().get(i).incrTime();
+        getList().get(i).move();
+      }
+      listM.makan();
+      
+      Point front = new Point(s.getHead().getPos());
+      if (s.getDirection() == 'U') {
+        front.setY(front.getY()-1);
+      } else if (s.getDirection() == 'D') {
+        front.setY(front.getY()+1);
+      } else if (s.getDirection() == 'L') {
+        front.setY(front.getX()-1);
+      } else if (s.getDirection() == 'R') {
+        front.setY(front.getX()+1);
+      }
+      boolean isEating = false;
+      for (int i = 0; i < getNbMakhluk(); i++) {
+        if (getList().get(i).getPosisi().equals(front)) {
+          getList().remove(i);
+          isEating = true;
+          score++;
+          i--;
+        }
+      }
+      if(isEating) {
+        s.eat();
+      } else {
+        s.move();
+      }
+      while (getNbMakhluk() < m.getSize()*m.getSize()/50 || getNbMakhluk() < 3) {
+        createMakhluk();
+      }
+      m.reset();
+      for (int i = 0; i < listM.size(); i++) {
+        m.setElmt(listM.getList().get(i).getPosisi(),
+                listM.getList().get(i).getChar());
+      }
+      Snake.SnakeBody iterator;
+      iterator = s.getTail();
+      while(iterator != s.getHead()) {
+        m.setElmt(iterator.getPos(), 'o');
+        iterator = iterator.getNext();
+      }
+      if (m.getElmt(iterator.getPos()) == 'o') {
+        m.setElmt(iterator.getPos(), 'X');
+        isGameOver = true;
+      } else {
+        m.setElmt(iterator.getPos(), 'O');
+      }
+      m.print();
     }
-    m.print();
   }
 
   /**
@@ -110,33 +174,34 @@ public class World {
   * @author Yusak Yuwono Awondatu / 13514005
   */
   public final void printExt() {
-    int size = listM.size();
-    if (size <= 1) {
-      try (FileWriter out = new FileWriter("screenshot.txt")) {
-        for (int i = 0; i < size + 2; i++) {
-          out.write("-");
-        }
-        out.write("\r\n");
-        for (int i = size - 1; i >= 0; i--) {
-          out.write("|");
-          for (int j = 0; j < size; j++) {
-            out.write(" ");
-            }
-          out.write("|\r\n");
-        }
-        for (int i = 0; i < size + 2; i++) {
-          out.write("-");
-        }
-        out.write("\r\n");
-      } catch (IOException ex) {
-          Logger.getLogger(World.class.getName()).log(Level.SEVERE, null, ex);
-      }
-    } else {
-      try {
-        m.printExt();
-      } catch (IOException ex) {
-        Logger.getLogger(World.class.getName()).log(Level.SEVERE, null, ex);
-      }
+    try {
+      m.printExt();
+    } catch (IOException ex) {
+      Logger.getLogger(World.class.getName()).log(Level.SEVERE, null, ex);
     }
+  }
+  
+  public final int getScore() {
+    return score;
+  }
+  
+  public final void setDirection(char c) {
+    if (c == 'U' && s.getDirection()!= 'D') {
+      s.setDirection(c);
+    } else if (c == 'D' && s.getDirection()!= 'U') {
+      s.setDirection(c);
+    } else if (c == 'L' && s.getDirection()!= 'R') {
+      s.setDirection(c);
+    } else if (c == 'R' && s.getDirection()!= 'L') {
+      s.setDirection(c);
+    }
+  }
+  
+  public final char getDirection() {
+    return s.getDirection();
+  }
+  
+  public final boolean getGameOverStatus() {
+    return isGameOver;
   }
 }

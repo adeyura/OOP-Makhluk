@@ -20,11 +20,6 @@ public class Board {
   private final char[][] c;
 
   /**
-  * Konstanta banyak line kosong yang dicetak tiap awal board.
-  */
-  private final int nEmptyLine = 20;
-
-  /**
   * ctor kelas Board, inisialisasi matriks dunia dengan ukuran.
   * tertentu
   * @param sz
@@ -38,14 +33,11 @@ public class Board {
   * Method print() digunakan untuk mencetak board ke layar.
   */
   public final void print() {
-    for (int i = 0; i < nEmptyLine; i++) {
-      System.out.println("");
-    }
     for (int i = 0; i < size + 2; i++) {
       System.out.print("-");
     }
     System.out.println();
-    for (int i = size - 1; i >= 0; i--) {
+    for (int i = 0; i < size; i++) {
       System.out.print("|");
       for (int j = 0; j < size; j++) {
           System.out.print(c[j][i]);
@@ -105,7 +97,7 @@ public class Board {
         out.write("-");
       }
       out.write("\r\n");
-      for (int i = size - 1; i >= 0; i--) {
+      for (int i = 0; i < size; i++) {
         out.write("|");
         for (int j = 0; j < size; j++) {
           out.write(c[j][i]);
