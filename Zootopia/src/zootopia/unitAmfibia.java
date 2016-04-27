@@ -12,7 +12,7 @@ import java.util.Random;
 public class unitAmfibia {
     public static void main(String [] args) throws InterruptedException {
         
-        Makhluk.idcounter = 0;
+    //    Makhluk.idcounter = 0;
         
         Random rand = new Random();
         int worldSize = 10;
