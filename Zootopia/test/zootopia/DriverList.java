@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  */
 public class DriverList {
     public static void main (String[] args) {
-        Makhluk.idcounter = 0;
+   //     Makhluk.idcounter = 0;
 
 	int worldSize = 8;
 	int nMakhluk = 100;
