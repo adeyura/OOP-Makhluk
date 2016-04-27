@@ -48,6 +48,7 @@ public class Zootopia extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,37 +70,47 @@ public class Zootopia extends javax.swing.JFrame {
 
         jLabel1.setText("nanti dihapus ini");
 
-        jLabel2.setText("Masukan ukuran dunia :");
+        jLabel2.setText("Masukan ukuran dunia (>= 3) :");
 
         jLabel3.setFocusable(false);
-
-        jLabel4.setText("jLabel4");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ExitButton)
-                    .addComponent(StartButton))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ExitButton)
+                            .addComponent(StartButton)
+                            .addComponent(jLabel4)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel5)))
                 .addGap(55, 55, 55)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 531, Short.MAX_VALUE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(59, 59, 59)
+                        .addComponent(jLabel4)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -114,9 +125,7 @@ public class Zootopia extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel4)
-                        .addGap(65, 65, 65))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         pack();
@@ -127,9 +136,11 @@ public class Zootopia extends javax.swing.JFrame {
         JPanel panel = new JPanel();
         JLabel label1 = new JLabel();
         JLabel label2 = new JLabel();
+        JLabel label3 = new JLabel();
         //Menambah Komponen
         panel.add(label1);
         panel.add(label2);
+        panel.add(label3);
         view.add(panel);
         view.setSize(1000,1000);
         view.addKeyListener(new KeyPress());
@@ -137,6 +148,7 @@ public class Zootopia extends javax.swing.JFrame {
         view.setAlwaysOnTop(true);
         jLabel3 = label1;
         jLabel4 = label2;
+        jLabel5 = label3;
         // TODO add your handling code here: 
         int i,j;
         int check = Integer.parseInt(jTextField1.getText());
@@ -234,6 +246,9 @@ public class Zootopia extends javax.swing.JFrame {
     public javax.swing.JLabel getLabel4() {
         return jLabel4;
     }
+    public javax.swing.JLabel getLabel5() {
+        return jLabel5;
+    }
     public static char getbufferDirection() {
         return bufferDirection;
     }
@@ -241,12 +256,12 @@ public class Zootopia extends javax.swing.JFrame {
         bufferDirection = c;
     }
     
-    private static final int RATIO_MAKHLUK = 3;
+    private static final int RATIO_MAKHLUK = 50;
     private static boolean endworld;
     private static final int SCREEN_SIZE = 20;
     private static int worldSize;
     private static int startMakhluk;
-    private static final int DELTA_TIME = 500;
+    private static final int DELTA_TIME = 100;
     private static World w;
     private static boolean stop;
     private static boolean frameByFrame;
@@ -259,6 +274,7 @@ public class Zootopia extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

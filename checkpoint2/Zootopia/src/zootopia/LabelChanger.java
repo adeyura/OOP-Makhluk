@@ -15,6 +15,8 @@ public class LabelChanger implements Runnable {
         Zootopia main = Main.getMain();
         JLabel jLabel3 = main.getLabel3();
         JLabel jLabel4 = main.getLabel4();
+        JLabel jLabel5 = main.getLabel5();
+        int scoreboard;
         
         while (!Zootopia.getEndworld()) {
             Zootopia.getWorld().update();
@@ -34,8 +36,11 @@ public class LabelChanger implements Runnable {
             }
             String s = Zootopia.getWorld().getBoard().print();
             jLabel3.setText(s);
+            
+            scoreboard = Zootopia.getWorld().getScore();
+            jLabel5.setText("<html><pre>Score = "+scoreboard+"</html></pre>");
           }
-          String gameover = "<html><pre>Game Over</pre></html>";
+          String gameover = "<html><pre>    Game Over      </pre></html>";
           jLabel4.setText(gameover);          
     }
 }
