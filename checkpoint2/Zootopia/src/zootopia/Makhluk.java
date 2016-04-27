@@ -4,7 +4,6 @@ package zootopia;
  * Sebuah abstract class Makhluk yang turunannya adalah Aves Reptil dan Amfibia.
  * Pembagian ini berdasarkan pergerakan dari masing-masing hewan.
  * @author Cendhika Imantoro / 13514037
- * @author Yusak Yuwono Awondatu / 13514005
  * @version 1.0
  */
 
@@ -14,30 +13,40 @@ public abstract class Makhluk {
   * Getter Kekuatan Makhluk.
   * @return kekuatan
   */
-  public abstract int getKekuatan();
+  public int getKekuatan(){
+      return kekuatan;
+  }
 
   /**
   * Getter char setiap Makhluk.
   * @return char
   */
-  public abstract char getChar();
+  public char getChar(){
+      return c;
+  }
 
   /**
   * Getter posisi Makhluk dalam kordinat Point.
   * @return p
   */
-  public abstract Point getPosisi();
+  public Point getPosisi(){
+    return p;
+  }
 
   /**
   * Getter ID setiap Makhluk.
   * @return ID
   */
-  public abstract int getID();
+  public int getID(){
+    return id;
+  }
 
   /**
   * Procedure untuk me-increment waktu dunia.
   */
-  public abstract void incrTime();
+  public void incrTime(){
+      setWaktu(getWaktu()+1);
+  }
 
   /**
   * Procedure untuk membuat Makhluk bergerak di board.
@@ -47,40 +56,146 @@ public abstract class Makhluk {
   /**
   * Nilai kekuatan setiap Makhluk.
   */
-  protected int kekuatan;
+  private int kekuatan;
 
+  /**
+   * Procedure untuk mengubah nilai kekuatan
+   * @param k 
+   */
+  public void setKekuatan(int k){
+      kekuatan=k;
+  }
+  
   /**
   * ID setiap makhluk yang unik membedakan setiap makhluk.
   */
-  protected int id;
+  private int id;
 
+  /**
+   * Setter id
+   * @param x
+   */
+  public void setID(int x){
+      id=x;
+  }
+  
   /**
   * Berisi berapa banyak ID Makhluk yang sudah dibuat.
   */
-  protected static int idcounter;
+  private static int idcounter;
+  
+  /**
+   * Getter idcounter
+   * @return idcounter
+   */
+  public int getIDCounter(){
+    return idcounter;
+  }
+  
+  /**
+   * Setter IDcounter
+   * @param x 
+   */
+  public void setIDCounter(int x){
+      idcounter=x;
+  }
+  
 
   /**
   * Identitas Makhluk yang ditampilkan di Board.
   */
-  protected char c;
-
+  private char c;
+  
+  /**
+   * Setter c
+   * @param C 
+   */
+  public void setChar(char C){
+      c=C;
+  }
+  
   /**
   * Posisi Makhluk dalam kordinat Point.
   */
-  protected Point p = new Point();
-
+  private Point p = new Point();
+  
+  /**
+   * Setter p.x
+   * @param x 
+   */
+  public void setPX(int x){
+    p.setX(x);
+  }
+  
+  /**
+   * Setter p.y
+   * @param y 
+   */
+  public void setPY(int y){
+    p.setY(y);
+  }
+  
   /**
   * Delta time tertentu akan membuat makhluk bergerak.
   */
-  protected int deltatime;
+  private int deltatime;
 
+  /**
+   * Setter deltatime
+   * @param t 
+   */
+  public void setDeltaTime(int t){
+      deltatime=t;
+  }
+  
+  /**
+   * Getter deltatime
+   * @return deltatime
+   */
+  public int getDeltaTime(){
+      return deltatime;
+  }
+  
   /**
   * Variabel waktu dunia.
   */
-  protected int waktu;
+  private int waktu;
 
+  /**
+   * Setter waktu
+   * @param t 
+   */
+  public void setWaktu(int t){
+      waktu=t;
+  }
+
+  /**
+   * Getter waktu
+   * @return waktu
+   */
+  public int getWaktu(){
+      return waktu;
+  }
+  
   /**
   * Ukuran Dunia.
   */
-  protected int worldSize;
+  private int worldSize;
+  
+  /**
+   * Getter worldSize
+   * @return worldSize
+   */
+  public int getWorldSize(){
+      return worldSize;
+  }
+  
+  /**
+   * Setter worldSize
+   * @param w 
+   */
+  public void setWorldSize(int w){
+      worldSize=w;
+  }
+  
 }

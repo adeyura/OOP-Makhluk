@@ -6,6 +6,7 @@ import java.util.Random;
  * @author Ade Yusuf Rahardian / 13514079
  * @version 1.0
  */
+
 public class Elang extends Aves {
 
   /**
@@ -28,59 +29,15 @@ public class Elang extends Aves {
   * @param worldSize
   */
   public Elang(final int worldSize) {
-    Random rand = new Random();
-    id = idcounter;
-    idcounter++;
-    kekuatan = KEKUATAN;
-    c = CHAR;
-    deltatime = DELTA;
-    this.worldSize = worldSize;
-    p.setX(rand.nextInt(worldSize));
-    p.setY(rand.nextInt(worldSize));
-    waktu = rand.nextInt(deltatime);
-  }
-
-  /**
-  * Getter kekuatan makhluk.
-  * @return kekuatan
-  */
-  @Override
-  public final int getKekuatan() {
-    return kekuatan;
-  }
-
-  /**
-  * Getter char makhluk.
-  * @return c
-  */
-  @Override
-  public final char getChar() {
-    return c;
-  }
-
-  /**
-  * Getter posisi makhluk dalam kordinat Point.
-  * @return p
-  */
-  @Override
-  public final Point getPosisi() {
-    return p;
-  }
-
-  /**
-  * Getter id setiap makhluk.
-  * @return id
-  */
-  @Override
-  public final int getID() {
-    return id;
-  }
-
-  /**
-  * Prosedur untuk men-increment nilai waktu dunia.
-  */
-  @Override
-  public final void incrTime() {
-    waktu++;
+   Random rand = new Random();
+    setID(getIDCounter());
+    setIDCounter(getIDCounter()+1);
+    setKekuatan(KEKUATAN);
+    setChar(CHAR);
+    setDeltaTime(DELTA);
+    setWorldSize(worldSize);
+    setPX(rand.nextInt(worldSize));
+    setPY(rand.nextInt(worldSize));
+    setWaktu(rand.nextInt(getDeltaTime()));
   }
 }

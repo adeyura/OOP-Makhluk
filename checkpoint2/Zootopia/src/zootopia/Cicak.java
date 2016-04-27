@@ -1,5 +1,6 @@
 package zootopia;
 import java.util.Random;
+
 /**
  * Implementasi kelas hewan Cicak yang merupakan turunan dari kelas Reptil.
  * @author Cendhika Imantoro / 13514037
@@ -29,58 +30,14 @@ public class Cicak extends Reptil {
   */
   public Cicak(final int worldSize) {
     Random rand = new Random();
-    id = idcounter;
-    idcounter++;
-    kekuatan = KEKUATAN;
-    c = CHAR;
-    deltatime = DELTA;
-    this.worldSize = worldSize;
-    p.setX(rand.nextInt(worldSize));
-    p.setY(rand.nextInt(worldSize));
-    waktu = rand.nextInt(deltatime);
-  }
-
-  /**
-  * Getter kekuatan makhluk.
-  * @return kekuatan
-  */
-  @Override
-  public final int getKekuatan() {
-    return kekuatan;
-  }
-
-  /**
-  * Getter char makhluk.
-  * @return c
-  */
-  @Override
-  public final char getChar() {
-    return c;
-  }
-
-  /**
-  * Getter posisi makhluk dalam kordinat Point.
-  * @return p
-  */
-  @Override
-  public final Point getPosisi() {
-    return p;
-  }
-
-  /**
-  * Getter id setiap makhluk.
-  * @return id
-  */
-  @Override
-  public final int getID() {
-    return id;
-  }
-
-  /**
-  * Prosedur untuk men-increment nilai waktu dunia.
-  */
-  @Override
-  public final void incrTime() {
-    waktu++;
+    setID(getIDCounter());
+    setIDCounter(getIDCounter()+1);
+    setKekuatan(KEKUATAN);
+    setChar(CHAR);
+    setDeltaTime(DELTA);
+    setWorldSize(worldSize);
+    setPX(rand.nextInt(worldSize));
+    setPY(rand.nextInt(worldSize));
+    setWaktu(rand.nextInt(getDeltaTime()));
   }
 }

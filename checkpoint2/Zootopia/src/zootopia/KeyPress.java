@@ -9,8 +9,8 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 /**
- *
- * @author Asus pc
+ * Kelas yang mengelola penekanan tombol input dari pengguna
+ * @author Cendhika Imantoro / 13514037
  */
 public class KeyPress implements KeyListener {
          @Override

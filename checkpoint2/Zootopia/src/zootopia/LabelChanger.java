@@ -5,6 +5,7 @@ package zootopia;
 import javax.swing.JLabel;
 /**
  *
+ * Kelas untuk membuat proses frame baru
  * @author Cendhika Imantoro / 13514037
  */
 public class LabelChanger implements Runnable {

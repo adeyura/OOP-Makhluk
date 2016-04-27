@@ -47,12 +47,12 @@ abstract class Reptil extends Makhluk {
   public void move() {
     int x, y;
 
-    x = p.getX();
-    y = p.getY();
+    x = getPosisi().getX();
+    y = getPosisi().getY();
 
-    if (waktu % deltatime == 0) {
+    if (getWaktu() % getDeltaTime() == 0) {
       if (sumbu == 'X') {
-        if (x == worldSize - 1) {
+        if (x == getWorldSize() - 1) {
           arah = 1;
         } else if (x == 0) {
           arah = 0;
@@ -63,7 +63,7 @@ abstract class Reptil extends Makhluk {
           x = x - 1;
         }
       } else {
-        if (y == worldSize - 1) {
+        if (y == getWorldSize() - 1) {
           arah = 1;
         } else if (y == 0) {
           arah = 0;
@@ -75,7 +75,7 @@ abstract class Reptil extends Makhluk {
         }
       }
     }
-    p.setX(x);
-    p.setY(y);
+    setPX(x);
+    setPY(y);
   }
 }
