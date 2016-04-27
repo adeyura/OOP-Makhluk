@@ -1,0 +1,85 @@
+
+--------------------------------------------------
+- Package: java.io
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.logging
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: zootopia
+--------------------------------------------------
+
+Stats:
+    Total Classes: 18
+    Concrete Classes: 14
+    Abstract Classes: 4
+
+    Ca: 0
+    Ce: 4
+
+    A: 0.22
+    I: 1
+    D: 0.22
+
+Abstract Classes:
+    zootopia.Amfibia
+    zootopia.Aves
+    zootopia.Makhluk
+    zootopia.Reptil
+
+Concrete Classes:
+    zootopia.Belut
+    zootopia.Board
+    zootopia.Cicak
+    zootopia.Elang
+    zootopia.Garuda
+    zootopia.Kadal
+    zootopia.Katak
+    zootopia.ListMakhluk
+    zootopia.Main
+    zootopia.Main$ExecuteInput
+    zootopia.Pelikan
+    zootopia.Point
+    zootopia.Rajawali
+    zootopia.World
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    java.util.logging
+
+Used By:
+    Not used by any packages.
+
+
+--------------------------------------------------
+- Package Dependency Cycles:
+--------------------------------------------------
+
+
+--------------------------------------------------
+- Summary:
+--------------------------------------------------
+
+Name, Class Count, Abstract Class Count, Ca, Ce, A, I, D, V:
+
+java.io,0,0,1,0,0,0,1,1
+java.lang,0,0,1,0,0,0,1,1
+java.util,0,0,1,0,0,0,1,1
+java.util.logging,0,0,1,0,0,0,1,1
+zootopia,18,4,0,4,0.22,1,0.22,1
