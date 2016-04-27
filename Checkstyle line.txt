@@ -1,0 +1,23 @@
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml MyClass.java -o MyClass.txt
+
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Makhluk.java -o Makhluk.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Reptil.java -o Reptil.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Amfibia.java -o Amfibia.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Aves.java -o Aves.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Kadal.java -o Kadal.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Cicak.java -o Cicak.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Katak.java -o Katak.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Belut.java -o Belut.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Elang.java -o Elang.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Garuda.java -o Garuda.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Rajawali.java -o Rajawali.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Pelikan.java -o Pelikan.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml ListMakhluk.java -o ListMakhluk.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Board.java -o Board.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml World.java -o World.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Snake.java -o Snake.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Main.java -o Main.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml Zootopia.java -o Zootopia.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml LabelChanger.java -o LabelChanger.txt
+java -jar checkstyle-6.17-all.jar -c /sun_checks.xml KeyPress.java -o KeyPress.txt
+
