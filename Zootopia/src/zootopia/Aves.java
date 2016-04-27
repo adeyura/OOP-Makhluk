@@ -18,21 +18,21 @@ public abstract class Aves extends Makhluk {
   */
   @Override
   public final void move() {
-    int x = p.getX();
-    int y = p.getY();
+    int x = getPosisi().getX();
+    int y = getPosisi().getY();
     int dx = 0, dy = 0;
 
-    if (waktu % deltatime == 0) {
+    if (getWaktu() % getDeltaTime() == 0) {
       do {
         do {
           Random randomGenerator = new Random();
           dx = randomGenerator.nextInt(N_RAND) - 1;
           dy = randomGenerator.nextInt(N_RAND) - 1;
         } while (dx == 0 && dy == 0);
-      } while (x + dx < 0 || x + dx > worldSize - 1
-                || y + dy < 0 || y + dy > worldSize - 1);
+      } while (x + dx < 0 || x + dx > getWorldSize() - 1
+                || y + dy < 0 || y + dy > getWorldSize() - 1);
     }
-    p.setX(x + dx);
-    p.setY(y + dy);
+    setPX(x + dx);
+    setPY(y + dy);
   }
 }

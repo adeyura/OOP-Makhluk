@@ -10,7 +10,7 @@ import java.util.Random;
 abstract class Amfibia extends Makhluk {
 
   /**
-   * Atribut Protected arah.
+   * Atribut Private arah.
    */
   private int arah;
 
@@ -76,39 +76,41 @@ abstract class Amfibia extends Makhluk {
   @Override
   public void move() {
     int nextMove, x, y;
-    if (waktu % deltatime == 0) {
+    if (getWaktu() % getDeltaTime() == 0) {
       Random randomGenerator;
       randomGenerator = new Random();
-      if (p.getX() == 0 || p.getY() == 0 || p.getX() == worldSize - 1
-                                                 || p.getY() == worldSize - 1) {
+      if (getPosisi().getX() == 0 || getPosisi().getY() == 0 || getPosisi().getX() == getWorldSize() - 1
+                                                 || getPosisi().getY() == getWorldSize() - 1) {
         do {
           nextMove = randomGenerator.nextInt(N_ARAH);
-        } while (((p.getX() == 0)
+        } while (((getPosisi().getX() == 0)
                   && (nextMove <= VAL_UP_LEFT && nextMove >= VAL_DOWN_LEFT))
-            || (((p.getY()) == 0)
+            || (((getPosisi().getY()) == 0)
                   && (nextMove <= VAL_DOWN_LEFT && nextMove >= VAL_DOWN_RIGHT))
-            || ((p.getX() == worldSize - 1)
+            || ((getPosisi().getX() == getWorldSize() - 1)
                   && (nextMove <= VAL_DOWN_RIGHT && nextMove >= VAL_UP_RIGHT))
-            || ((p.getY() == worldSize - 1)
+            || ((getPosisi().getY() == getWorldSize() - 1)
                   && (nextMove <= VAL_UP_RIGHT || nextMove >= VAL_UP_LEFT)));
         arah = nextMove;
       }
-      x = p.getX();
-      y = p.getY();
+      x = getPosisi().getX();
+      y = getPosisi().getY();
       if (arah <= VAL_UP_LEFT && arah >= VAL_DOWN_LEFT) {
-        x = p.getX() - 1;
+        x = getPosisi().getX() - 1;
       }
       if (arah <= VAL_DOWN_RIGHT && arah >= VAL_UP_RIGHT) {
-        x = p.getX() + 1;
+        x = getPosisi().getX() + 1;
       }
       if (arah <= VAL_DOWN_LEFT && arah >= VAL_DOWN_RIGHT) {
-        y = p.getY() - 1;
+        y = getPosisi().getY() - 1;
       }
       if (arah <= VAL_UP_RIGHT || arah >= VAL_UP_LEFT) {
-        y = p.getY() + 1;
+        y = getPosisi().getY() + 1;
       }
-      p.setX(x);
-      p.setY(y);
+      setPX(x);
+      setPY(y);
     }
   }
+  
+  
 }
