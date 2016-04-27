@@ -1,13 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Kelas untuk membuat proses frame baru
  */
 package zootopia;
 import javax.swing.JLabel;
 /**
  *
- * @author Asus pc
+ * @author Varian Caesar / 13514041
  */
 public class LabelChanger implements Runnable {
     @Override
