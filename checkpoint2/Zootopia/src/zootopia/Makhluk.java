@@ -4,6 +4,7 @@ package zootopia;
  * Sebuah abstract class Makhluk yang turunannya adalah Aves Reptil dan Amfibia.
  * Pembagian ini berdasarkan pergerakan dari masing-masing hewan.
  * @author Cendhika Imantoro / 13514037
+ * @author Yusak Yuwono Awondatu / 13514005
  * @version 1.0
  */
 

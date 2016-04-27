@@ -4,6 +4,7 @@ import java.util.Random;
  * Merupakan kelas hewan yang termasuk golongan Aves.
  * Hewan - hewan yang termasuk Aves yaitu Elang, Rajawali, Garuda dan Pelikan.
  * @author Ade Yusuf Rahardian / 13514079
+ * @author Yusak Yuwono Awondatu / 13514005
  * @version 1.0
  */
 public abstract class Aves extends Makhluk {

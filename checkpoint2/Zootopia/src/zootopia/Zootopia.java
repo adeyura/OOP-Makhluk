@@ -12,6 +12,7 @@ import javax.swing.JPanel;
 /**
  *
  * @author Varian Caesar / 13514041
+ * @author Ade Yusuf Rahardian / 13514037
  */
 public class Zootopia extends javax.swing.JFrame {
 

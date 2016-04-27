@@ -6,7 +6,7 @@
 package zootopia;
 /**
  *
- * @author Asus pc
+ * @author Ade Yusuf Rahardian / 13514079
  */
 public class Main {
     private static Zootopia main;

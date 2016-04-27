@@ -3,6 +3,7 @@ import java.util.Random;
 /**
  * Implementasi kelas hewan Belut yang merupakan turunan dari kelas Amfibia.
  * @author Varian Caesar / 13514041
+ * @author Yusak Yuwono Awondatu / 13514005
  * @version 1.0
  */
 public class Belut extends Amfibia {

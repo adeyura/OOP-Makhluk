@@ -5,6 +5,7 @@ import java.util.Random;
  * Merupakan kelas hewan yang termasuk golongan Amfibia.
  * Hewan - hewan yang termasuk Amfibia yaitu Katak dan Belut.
  * @author Varian Caesar / 13514041
+ * @author Yusak Yuwono Awondatu / 13514005
  * @version 1.0
  */
 abstract class Amfibia extends Makhluk {
