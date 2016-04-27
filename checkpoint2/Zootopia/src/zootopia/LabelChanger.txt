@@ -1,0 +1,13 @@
+Starting audit...
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\LabelChanger.java:0: Missing package-info.java file. [JavadocPackage]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\LabelChanger.java:6: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\LabelChanger.java:12:5: Method 'run' is not designed for extension - needs to be abstract, final or empty. [DesignForExtension]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\LabelChanger.java:19: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\LabelChanger.java:29:67: Must have at least one statement. [EmptyBlock]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\LabelChanger.java:38: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\LabelChanger.java:40:50: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\LabelChanger.java:40:51: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\LabelChanger.java:40:61: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\LabelChanger.java:40:62: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\LabelChanger.java:43: Line has trailing spaces. [RegexpSingleline]
+Audit done.

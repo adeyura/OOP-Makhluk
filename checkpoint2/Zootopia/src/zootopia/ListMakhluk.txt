@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\ListMakhluk.java:0: Missing package-info.java file. [JavadocPackage]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\ListMakhluk.java:60:46: Expected @param tag for 'd'. [JavadocMethod]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\ListMakhluk.java:70:48: Expected @param tag for 'p'. [JavadocMethod]
+Audit done.

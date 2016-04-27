@@ -1,0 +1,6 @@
+Starting audit...
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Belut.java:0: Missing package-info.java file. [JavadocPackage]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Belut.java:31:26: Expected @param tag for 'worldSize'. [JavadocMethod]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Belut.java:34:32: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Belut.java:34:33: '+' is not followed by whitespace. [WhitespaceAround]
+Audit done.

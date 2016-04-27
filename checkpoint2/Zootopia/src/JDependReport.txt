@@ -1,5 +1,10 @@
 
 --------------------------------------------------
+- Package: java.awt.event
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
 - Package: java.io
 --------------------------------------------------
 No stats available: package referenced, but not analyzed.
@@ -20,20 +25,25 @@ No stats available: package referenced, but not analyzed.
 No stats available: package referenced, but not analyzed.
 
 --------------------------------------------------
+- Package: javax.swing
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
 - Package: zootopia
 --------------------------------------------------
 
 Stats:
-    Total Classes: 18
-    Concrete Classes: 14
+    Total Classes: 36
+    Concrete Classes: 32
     Abstract Classes: 4
 
     Ca: 0
-    Ce: 4
+    Ce: 6
 
-    A: 0.22
+    A: 0.11
     I: 1
-    D: 0.22
+    D: 0.11
 
 Abstract Classes:
     zootopia.Amfibia
@@ -45,23 +55,43 @@ Concrete Classes:
     zootopia.Belut
     zootopia.Board
     zootopia.Cicak
+    zootopia.DriverAves
+    zootopia.DriverBoard
+    zootopia.DriverMakhluk
+    zootopia.DriverReptil
     zootopia.Elang
     zootopia.Garuda
     zootopia.Kadal
     zootopia.Katak
+    zootopia.KeyPress
+    zootopia.LabelChanger
     zootopia.ListMakhluk
     zootopia.Main
     zootopia.Main$ExecuteInput
+    zootopia.Main$KeyPress
     zootopia.Pelikan
     zootopia.Point
     zootopia.Rajawali
+    zootopia.Snake
+    zootopia.Snake$SnakeBody
     zootopia.World
+    zootopia.Zootopia$1
+    zootopia.Zootopia$2
+    zootopia.Zootopia$3
+    zootopia.Zootopia$4
+    zootopia.Zootopia$5
+    zootopia.Zootopia$ExecuteInput
+    zootopia.Zootopia$KeyPress
+    zootopia.Zootopia$main
+    zootopia.unitAmfibia
 
 Depends Upon:
+    java.awt.event
     java.io
     java.lang
     java.util
     java.util.logging
+    javax.swing
 
 Used By:
     Not used by any packages.
@@ -78,8 +108,10 @@ Used By:
 
 Name, Class Count, Abstract Class Count, Ca, Ce, A, I, D, V:
 
+java.awt.event,0,0,1,0,0,0,1,1
 java.io,0,0,1,0,0,0,1,1
 java.lang,0,0,1,0,0,0,1,1
 java.util,0,0,1,0,0,0,1,1
 java.util.logging,0,0,1,0,0,0,1,1
-zootopia,18,4,0,4,0.22,1,0.22,1
+javax.swing,0,0,1,0,0,0,1,1
+zootopia,36,4,0,6,0.11,1,0.11,1

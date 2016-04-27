@@ -1,0 +1,4 @@
+Starting audit...
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Reptil.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Reptil.java:0: Missing package-info.java file. [JavadocPackage]
+Audit done.

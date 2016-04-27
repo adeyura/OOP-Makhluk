@@ -1,0 +1,7 @@
+Starting audit...
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Amfibia.java:0: Missing package-info.java file. [JavadocPackage]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Amfibia.java:82: Line is longer than 80 characters (found 104). [LineLength]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Amfibia.java:83: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Amfibia.java:114: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Amfibia.java:115: Line has trailing spaces. [RegexpSingleline]
+Audit done.
