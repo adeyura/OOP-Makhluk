@@ -261,7 +261,7 @@ public class Zootopia extends javax.swing.JFrame {
     private static final int SCREEN_SIZE = 20;
     private static int worldSize;
     private static int startMakhluk;
-    private static final int DELTA_TIME = 500;
+    private static final int DELTA_TIME = 100;
     private static World w;
     private static boolean stop;
     private static boolean frameByFrame;
