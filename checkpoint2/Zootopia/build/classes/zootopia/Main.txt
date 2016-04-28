@@ -1,0 +1,10 @@
+Starting audit...
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Main.java:0: Missing package-info.java file. [JavadocPackage]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Main.java:11:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Main.java:12:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Main.java:13:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Main.java:16:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Main.java:16:29: Parameter args should be final. [FinalParameters]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Main.java:16:40: Array brackets at illegal position. [ArrayTypeStyle]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Main.java:21: Line has trailing spaces. [RegexpSingleline]
+Audit done.

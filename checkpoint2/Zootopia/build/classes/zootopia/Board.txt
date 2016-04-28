@@ -1,0 +1,10 @@
+Starting audit...
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Board.java:0: Missing package-info.java file. [JavadocPackage]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Board.java:32:26: Expected @param tag for 'sz'. [JavadocMethod]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Board.java:40: Expected an @return tag. [JavadocMethod]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Board.java:40:3: Method 'print' is not designed for extension - needs to be abstract, final or empty. [DesignForExtension]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Board.java:87:41: Expected @param tag for 'p'. [JavadocMethod]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Board.java:96:41: Expected @param tag for 'pos'. [JavadocMethod]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Board.java:96:57: Expected @param tag for 'cc'. [JavadocMethod]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Board.java:104:39: Expected @throws tag for 'IOException'. [JavadocMethod]
+Audit done.

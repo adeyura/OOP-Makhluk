@@ -1,0 +1,7 @@
+Starting audit...
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Katak.java:0: Missing package-info.java file. [JavadocPackage]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Katak.java:4: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Katak.java:31:26: Expected @param tag for 'worldSize'. [JavadocMethod]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Katak.java:34:32: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\IF\Semester 4\OOP\OOP-Makhluk\checkpoint2\Zootopia\src\zootopia\Katak.java:34:33: '+' is not followed by whitespace. [WhitespaceAround]
+Audit done.
